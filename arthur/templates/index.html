@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Throw</title>
+    <link rel="stylesheet" href="/arthur/static/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="li-logo">
+            <img class="li-img" src="/arthur/static/img/throw.png" alt="Logo Throw">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#personagens">Personagens</a></li>
+                <li><a href="#reportar-bug">Reportar Bug</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <img src="/arthur/static/img/throw.png" alt="Logo do Throw" class="logo">
+        <p>
+            Throw é um jogo de plataforma 2D que acompanha a jornada de um jovem aventureiro em um mundo repleto de desafios, obstáculos e inimigos.
+            Atualmente em fase beta, você já pode experimentar essa aventura emocionante. Se encontrar algum bug ou erro inesperado durante o jogo, pedimos que nos ajude a melhorar, descrevendo e reportando o problema para que possamos corrigi-lo.
+        </p>
+        <button class="btn">Download</button>
+    </section>
+
+    <section id="reportar-bug">
+        <h2>Reportar Bug</h2>
+        <form id="bug-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Seu email" required>
+
+            <label for="mensagem">Descrição do Bug:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva o bug" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+
+    <script>
+        // Configuração do Firebase (correto)
+        const firebaseConfig = {
+            apiKey: "AIzaSyDRnw_r3bWADY_EBBEuTKyNV1S_4hSmqLI",
+            authDomain: "throw-3bb17.firebaseapp.com",
+            databaseURL: "https://throw-3bb17-default-rtdb.firebaseio.com",
+            projectId: "throw-3bb17",
+            storageBucket: "throw-3bb17.firebasestorage.app",
+            messagingSenderId: "80043456601",
+            appId: "1:80043456601:web:e98f71ffcff0c690d95948"
+        };
+
+        // Inicializa o Firebase
+        const app = firebase.initializeApp(firebaseConfig);
+        const database = firebase.database();
+    </script>
+
+    <script src="/arthur/static/js/main.js"></script>
+</body>
+</html>

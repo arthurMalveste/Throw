@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Position</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            background-color: rgb(195, 241, 195);
+        }
+       .positionRelative{
+            position:relative;
+            left:20px;
+            background-color: rgb(245, 149, 149);
+            z-index: -1;
+        }
+        .positionFixedTop{
+            position:fixed;
+            top:0; 
+            right:20px;
+            background-color:rgb(208, 167, 246);
+        }
+        .positionFixedBottom{
+            position:fixed;
+            bottom:0; 
+            right:20px;
+            background-color:rgb(208, 167, 246);
+        }
+        .positionAbsolute{
+            position:absolute;
+            top:250px;
+            left:200px; 
+            background-color:rgb(167, 192, 246);
+        }
+        .positionSticky{
+            position: sticky;
+            top:5px;
+            background-color:rgb(246, 221, 167);
+        }        
+     </style>
+</head>
+<body>
+    <div class="box">Posicionamento padrão: static</div>
+    <div class="box">Posicionamento padrão: static</div>
+    <div class="box positionSticky">Posicionamento Sticky </div>
+    <div class="box positionRelative">Posicionamento relative com left = 20px</div>
+    <div class="box positionFixedTop">Posicionamento fixed - top</div>
+    <div class="box positionFixedBottom">Posicionamento fixed - bottom</div>
+    <div class="box positionAbsolute">Posicionamento absolute</div>
+    <div class="box">Posicionamento padrão: static</div>
+    <div class="box">Posicionamento padrão: static</div>
+</body>
+</html>
