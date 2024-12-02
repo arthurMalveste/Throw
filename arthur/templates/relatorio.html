@@ -4,11 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Relatório de Bugs</title>
+        <link rel="stylesheet" href="../static/styles/relatorio.css">
     </head>
     <body>
-        <h1>Relatório de Bugs</h1>
-        <table border="1">
-            <thead>
+        <div class="container">
+        <button> <span>Button</span>
+        </button>
+        <h1 class="titulo">Relatório de Bugs</h1>
+        <table border="1" class="tabela">
+            <thead class="titulos-tabela">
                 <tr>
                     <th>ID</th>
                     <th>Nome</th>
@@ -29,5 +33,6 @@
                 {% endfor %}
             </tbody>
         </table>
+    </div>
     </body>
     </html>
