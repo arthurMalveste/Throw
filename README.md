@@ -12,8 +12,12 @@ Comtribuidores :
 
 #### - Arduino-05
 
-#### - 
+#### - Marcos Mendes    
 
-#### -
+#### - Pedro Cirino
+
+#### - Giovanna Nunes
+
+#### - Heitor Martins
 
 
