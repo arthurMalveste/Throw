@@ -31,7 +31,7 @@ def relatorio():
     bugs = BugReport.query.all()
     return render_template('relatorio.html', bugs=bugs)
 
-@app.route('/index', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
         nome = request.form['nome']
@@ -50,6 +50,10 @@ def index():
             db.session.rollback()
 
     return render_template('index.html')
+
+@app.route('/personagens')
+def personagens():
+    return render_template('personagens.html')
 
 
 if __name__ == '__main__':
