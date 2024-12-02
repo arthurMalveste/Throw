@@ -1,0 +1,33 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Relatório de Bugs</title>
+    </head>
+    <body>
+        <h1>Relatório de Bugs</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Descrição</th>
+                    <th>Data do Reporte</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for bug in bugs %}
+                <tr>
+                    <td>{{ bug.id }}</td>
+                    <td>{{ bug.nome }}</td>
+                    <td>{{ bug.email }}</td>
+                    <td>{{ bug.mensagem }}</td>
+                    <td>{{ bug.data_report }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+    </html>

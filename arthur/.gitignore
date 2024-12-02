@@ -1,0 +1,4 @@
+.venv
+pycache
+instance
+throw_game.db
