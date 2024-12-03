@@ -31,7 +31,7 @@ def relatorio():
     bugs = BugReport.query.all()
     return render_template('relatorio.html', bugs=bugs)
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/index', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
         nome = request.form['nome']
